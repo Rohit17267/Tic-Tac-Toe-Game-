@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+#heading{
+    margin-top: 25px;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.game{
+    height: 60vmin; 
+    width: 60vmin;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items: center;
+    gap:1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color:rgb(226, 181, 17);
+    color: rgb(0, 1, 1);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgb(0, 0 , 1);
+    font-size: 8vmin;
+}
+#reset-btn{
+   padding: 1rem;
+   font-size: 2rem;
+   font-family:'Times New Roman', Times, serif;
+   background-color: #e01f1f;
+   border-radius: 1rem;
+   border: none;
+   box-shadow: 0 0 1rem rgb(0, 0 , 1);
+}
+.reset-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#new-btn{
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+   font-size: 2rem;
+   background-color: #9dc9b9;
+   border-radius: 1rem;
+   border: none;
+   box-shadow: 0 0 1rem rgb(0, 0 , 1);
+}
+
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    #heading{
+        margin-top: 70px;
+    }
+    .container {
+      height: 50vh;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .game {
+      height: auto;
+      width: 80vw;
+      gap: 2vw;
+    }
+  
+    .box {
+      height: 20vw;
+      width: 20vw;
+      font-size: 6vw;
+    }
+  
+    #reset-btn, #new-btn {
+      padding: 0.8rem;
+      font-size: 1.5rem;
+    }
+  
+    #msg {
+      font-size: 6vmin;
+    }
+  
+    .msg-container {
+      height: auto;
+      gap: 2rem;
+      padding: 40vh 0vh;
+    }
+  }
+  
+  /* Media Query for Extra Small Screens (e.g., very small devices) */
+  @media (max-width: 480px) {
+    .game {
+      width: 90vw;
+      gap: 2.5vw;
+    }
+  
+    .box {
+      height: 25vw;
+      width: 25vw;
+      font-size: 5vw;
+    }
+  
+    #reset-btn, #new-btn {
+      font-size: 1.2rem;
+      padding: 0.6rem;
+    }
+  
+    #msg {
+      font-size: 5vmin;
+    }
+  }
